@@ -10,7 +10,7 @@
 ![pip](img/pip_help.png)
 
 ## easy_install -h
-<img src="image.png" width=500>
+<img src="img/easyinstall.png" width=500>
 
 ## Pycharm Anaconda IDE
 ![IDE](img/IDE.png)
