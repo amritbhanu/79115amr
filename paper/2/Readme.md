@@ -3,10 +3,10 @@
 
 ## (ii) Keywords
 
-  * (ii1) **Search Based Software Engineering** : SBSE converts a software engineering problem into a computational search problem that can be tackled with a metaheuristic. This involves defining a search space, or the set of possible solutions. This space is typically too large to be explored exhaustively, suggesting a metaheuristic approach. (wiki)
-  * (ii2) **Parameter Tuning** : Parameter-tuning meant to optimize parameters of a classifier in order to maximize or minimize its objective; typically the maximization of efficiency or error minimization.
-  * (ii3) **Crossover Rate** : Whenever two individuals are selected from the parent generation, this parameter specifies the probability with which they are crossed over. If they are not crossed over, then the parents are passed on to the next stage (mutation), else the offspring resulting from the crossover are used at the mutation stage.
-  * (ii4) **Elitism Rate**  : Elitism describes the process that the best individuals of a population (its elite) automatically survive evolution.
+  * (ii1) **Naive Bayes Classifier** : Naive Bayes is a technique for constructing classifiers: models that assign class labels to problem instances, represented as vectors of feature values. It is a family of algorithms based on a common principle: all naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable. Naive Bayes model works without accepting Bayesian probability or using any Bayesian methods. (wiki)
+  * (ii2) **Severity** : The impact of a bug on the successful execution of the sorftware system. It is an absolute classification.
+  * (ii3) **Stemming and stopwords** : Stemming is the process for reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. Stop words are words which are filtered out before or after processing of natural language data. Though stop words usually refer to the most common words in a language. (wiki)
+  * (ii4) **Tf-idf**  : Term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The number of times a term occurs in a document is called its term frequency. An inverse document frequency factor is incorporated which diminishes the weight of terms that occur very frequently in the document set and increases the weight of terms that occur rarely. (wiki)
 
 ## (iii) Brief Notes
 
