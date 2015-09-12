@@ -20,4 +20,6 @@
 ![Ex 3.5] (img/img7.png)
 
 # 4.1
-![Ex 3.5] (img/img7.png)
+![Ex 4.1] (img/img8.png)
+![Ex 4.2] (img/img9.png)
+![Ex 4.3] (img/img10.png)
