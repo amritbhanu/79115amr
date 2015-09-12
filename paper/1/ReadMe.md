@@ -3,10 +3,10 @@
 
 ## (ii) Keywords
 
-  * (ii1)**Search Based Software Engineering** : SBSE converts a software engineering problem into a computational search problem that can be tackled with a metaheuristic. This involves defining a search space, or the set of possible solutions. This space is typically too large to be explored exhaustively, suggesting a metaheuristic approach. (wiki)
-  * (ii2)**Parameter Tuning** : Parameter-tuning meant to optimize parameters of a classifier in order to maximize or minimize its objective; typically the maximization of efficiency or error minimization.
-  * (ii3)**Crossover Rate** : Whenever two individuals are selected from the parent generation, this parameter specifies the probability with which they are crossed over. If they are not crossed over, then the parents are passed on to the next stage (mutation), else the offspring resulting from the crossover are used at the mutation stage.
-  * (ii4)**Elitism Rate**  : Elitism describes the process that the best individuals of a population (its elite) automatically survive evolution.
+  * (ii1) **Search Based Software Engineering** : SBSE converts a software engineering problem into a computational search problem that can be tackled with a metaheuristic. This involves defining a search space, or the set of possible solutions. This space is typically too large to be explored exhaustively, suggesting a metaheuristic approach. (wiki)
+  * (ii2) **Parameter Tuning** : Parameter-tuning meant to optimize parameters of a classifier in order to maximize or minimize its objective; typically the maximization of efficiency or error minimization.
+  * (ii3) **Crossover Rate** : Whenever two individuals are selected from the parent generation, this parameter specifies the probability with which they are crossed over. If they are not crossed over, then the parents are passed on to the next stage (mutation), else the offspring resulting from the crossover are used at the mutation stage.
+  * (ii4) **Elitism Rate**  : Elitism describes the process that the best individuals of a population (its elite) automatically survive evolution.
 
 ## (iii) Brief Notes
 
