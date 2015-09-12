@@ -16,13 +16,17 @@
    * **_Classifying the reports as bugs or a feature request_** : G. Antoniol, K. Ayari, M. Di Penta, F. Khomh, and Y.-G. Gu´eh´eneuc, “Is it a bug or an enhancement?: a textbased approach to classify change requests,” in CASCON ’08: Proceedings of the conference of the center for advanced studies on collaborative research. ACM, 2008, pp. 304–318.
    * **_Categorization of bug reports on their descriptions_** : D. Cubranic and G. C. Murphy, “Automatic bug triage using text categorization,” in Proceedings of the Sixteenth International Conference on Software Engineering & Knowledge Engineering, June 2004, pp. 92–97.
    * **_Duplicate bug report detection_** : P. Runeson, M. Alexandersson, and O. Nyholm, “Detection of duplicate defect reports using natural language processing,” in Proceedings of the 29th international conference on Software Engineering, 2007.
-  * (iii3) **Data** : They have generated the data using object-oriented software using EVOSUITE tool. This data consists of 20 software classes as case study. They considered this much to finsih the experiments in feasible time but still this led to more than one million experiments.
+  * (iii3) **Hypotheses** : 
+    * Assumptions: Report contains summary of observed malfunction and a longer description. The reports are posted by users who have technical knowledge so they will write a detailed technical report.
+    * Experiment: Extraction and organization of bug reports. Reports are prepocessed using the common steps of stopwords removal, stemming. Reports are categorized into svere and non-severe and classifier is trained. A number of classifiers are trained like Naive bayes, Naive Bayes Multinomial, 1-Nearest neighbor, SVM. For training the Tf-idf scores are maintained for feature extraction from data. They have used TPR (The rate of true positives) and FPR (the rate of false positives) for concluding the results.
   * (iii4) **New Results** :
-   * Different Parameter settings cause very large variance in the performance.
-   * Default parameter settings perform relatively well, but are far from optimal on individual problem instances.
-   * Tuning should be done on a very large sample of problem instances. Otherwise, the obtained parameter settings are likely to be worse than arbitrary default values.
-   * Available search budget has strong impact on the parameter settings that should be used.
+   * The Naive Bayes Multinomial classifier has the best accuracy and is also the fastest when classifying the severity of reported bugs.
+   * The Naive Bayes and Na¨ıve Bayes Multinomial classifiers are able to achieve stable accuracy the fastest. Also, we need about 250 bug reports of each severity when we train our classifier.
+   * Each component tends to have its own particular way of describing severe and non-severe bugs. Thus, terms which are good indicators of the severity are usually component-specific.
 
 ## (iv) Improvisations:
-  * (iv1) A problem related to tuning is the search budget too. With a genetic algorithm population size will be more and this will take more computational time. Search budget work could have done separately to not conflict the results.
-  * (iv2) Some problems cannont be deterministically found in reasonable time. This area could be a potential to work on.
+  * (iv1) The classifier is trained on component basis, but a single report can belong to different components. Instead of single lables they should consider multi labels.
+  * (iv2) They are dependent too much on the users giving detailed reports of bugs. There can be users who don't have that much technical knowledge.
+  * (iv3) They have considered only 2 softwares bugs Eclipse and Genome. Validity needs to be checked on other softwares too.
+  * (iv4) Reports aren't reliable as what they enter in description is according to their senses. But they might fall into different category.
+  * (iv5) Duplicate bug reports will shift the training curve to fall each report into 1 category.
