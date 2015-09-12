@@ -1,4 +1,4 @@
-# Coding HW 1
+## Coding HW 2
 
 # 3.1
 ![Ex 3.1] (img/img1.png)
