@@ -18,3 +18,6 @@
 ![Ex 3.5] (img/img6.png)
 
 ![Ex 3.5] (img/img7.png)
+
+# 4.1
+![Ex 3.5] (img/img7.png)
