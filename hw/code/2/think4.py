@@ -45,46 +45,59 @@ for i in range(0,8):
 	#1#lt(bob,135)
 	lt(bob,90)
 
-
 wait_for_user()'''
+
+#tried some code above but the correct one referenced from http://www.greenteapress.com/thinkpython/code/flower.py
+
+#4.1
+'''
 def arc(t, r, angle):
     arc_length = 2 * math.pi * r * angle / 360
     n = int(arc_length / 3) + 1
     step_length = arc_length / n
     step_angle = float(angle) / n
-    
     for i in range(n):
         fd(t, step_length)
         lt(t, step_angle)
 	
-def petal(t, r, angle):
-    """Draws a petal using two arcs.
-
-    t: Turtle
-    r: radius of the arcs
-    angle: angle (degrees) that subtends the arcs
-    """
+def small_eclipse(t, r, angle):
     for i in range(2):
         arc(t, r, angle)
         lt(t, 180-angle)
 
 
-def flower(t, n, r, angle):
-    """Draws a flower with n petals.
-
-    t: Turtle
-    n: number of petals
-    r: radius of the arcs
-    angle: angle (degrees) that subtends the arcs
-    """
+def shape_center(t, n, r, angle):
     for i in range(n):
-        petal(t, r, angle)
+        small_eclipse(t, r, angle)
         lt(t, 360.0/n)
 
-flower(bob, 7, 60.0, 60.0)
+#shape_center(bob, 7, 60.0, 60.0)
+#shape_center(bob, 10, 40.0, 80.0)
+shape_center(bob, 20, 140.0, 20.0)
 
-#flower(bob, 10, 40.0, 80.0)
+wait_for_user()'''
 
-#flower(bob, 20, 140.0, 20.0)
+#4.2
+def pie(t, n, r):
+    for i in range(n):
+        fd(t,size)
+        rt(t,180.0)
+        pu(t)
+        fd(t,size)
+        pd(t)
+        lt(t,180 - 360.0/n)
+
+    fd(t,size)
+    lt(t,90 + 180.0/n)
+    x=size*(math.sin(360/n * math.pi / 180)/math.sin((90-180.0/n)*math.pi/180))
+    for j in range(n):
+        fd(t,x)
+        lt(t,360/n)
+        
+
+size = 40
+#pie(bob,5,size)
+#pie(bob,6,size)
+pie(bob,7,size)
 
 wait_for_user()
