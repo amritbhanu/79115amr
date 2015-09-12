@@ -14,7 +14,7 @@
   * (iii2) **Related Work** :
    * **_Parameter Tuning and Control of ecolutionary algorithms_** : Eiben, A., Michalewicz, Z., Schoenauer, M., Smith, J.: Parameter control in evolutionary algorithms. Parameter Setting in Evolutionary Algorithms, 19–46 (2007).
    * **_Parameter Tuning on Common wisdom based settings_** : Smit, S., Eiben, A.: Parameter tuning of evolutionary algorithms: Generalist vs. specialist. Applications of Evolutionary Computation, 542–551 (2010).
-   * **_Regression Tree based approach on Parameter Search Algorithm _** : Bartz-Beielstein, T., Markon, S.: Tuning search algorithms for real-world applications: A regression tree based approach. In: IEEE Congress on Evolutionary Computation (CEC), pp. 1111–1118 (2004).
+   * **_Regression Tree based approach on Parameter Search Algorithm_** : Bartz-Beielstein, T., Markon, S.: Tuning search algorithms for real-world applications: A regression tree based approach. In: IEEE Congress on Evolutionary Computation (CEC), pp. 1111–1118 (2004).
    * **_GUIDE Tool for parameter tuning on search algorithm for industrial problem_** : Da Costa, L., Schoenauer, M.: Bringing evolutionary computation to industrial applications with GUIDE. In: Genetic and Evolutionary Computation Conference (GECCO), pp. 1467–1474 (2009).
   * (iii3) **Data** : They have generated the data using object-oriented software using EVOSUITE tool. This data consists of 20 software classes as case study. They considered this much to finsih the experiments in feasible time but still this led to more than one million experiments.
   * (iii4) **New Results** :
