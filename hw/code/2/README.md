@@ -1,5 +1,6 @@
 # Coding HW 1
 
+3.1
 ![Ex 3.1] (img/img1.png)
 
 (img/img2.png)
