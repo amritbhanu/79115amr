@@ -10,9 +10,9 @@
 
 ## (iii) Brief Notes
 
-  * (iii1) **Motivation** : Current researches don't talk about what population size to use for a genetic algorithm, which selection mechanism will be best? What other parameters to use to get the best result?
+  * (iii1) **Motivation** : Severity of a bug is very important for a smooth working of a system. For predicting bug report severity, we should have a good classification algorithm. How much data/bug reports are necessary to train a data to get a reliable prediction? Are there couple of classifies which can predict severity very well?
   * (iii2) **Related Work** :
-   * **_Parameter Tuning and Control of ecolutionary algorithms_** : Eiben, A., Michalewicz, Z., Schoenauer, M., Smith, J.: Parameter control in evolutionary algorithms. Parameter Setting in Evolutionary Algorithms, 19–46 (2007).
+   * **_Predicting severity based on a rule learning technique_** : T. Menzies and A. Marcus, “Automated severity assessment of software defect reports,” in IEEE International Conference on Software Maintenance, 28 2008-Oct. 4 2008, pp. 346–355.
    * **_Parameter Tuning on Common wisdom based settings_** : Smit, S., Eiben, A.: Parameter tuning of evolutionary algorithms: Generalist vs. specialist. Applications of Evolutionary Computation, 542–551 (2010).
    * **_Regression Tree based approach on Parameter Search Algorithm_** : Bartz-Beielstein, T., Markon, S.: Tuning search algorithms for real-world applications: A regression tree based approach. In: IEEE Congress on Evolutionary Computation (CEC), pp. 1111–1118 (2004).
    * **_GUIDE Tool for parameter tuning on search algorithm for industrial problem_** : Da Costa, L., Schoenauer, M.: Bringing evolutionary computation to industrial applications with GUIDE. In: Genetic and Evolutionary Computation Conference (GECCO), pp. 1467–1474 (2009).
