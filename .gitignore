@@ -63,6 +63,7 @@ target/
 .pydevproject
 .DS_Store
 *.pyc
+*~
 
 # Compressed files
 *.tar.gz
