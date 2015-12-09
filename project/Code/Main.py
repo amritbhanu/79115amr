@@ -58,3 +58,24 @@ if __name__ == "__main__":
     #This code has been referenced from https://github.com/ai-se/Spread-HyperVolume/tree/master/HyperVolume
 
     HyperVolume_wrapper()
+    optimi = {}
+    for x in optimizers:
+        mode = {}
+        for i in range(2):
+            # print("\n\nModel ",i,"\n\n")
+            if x == "nsga2":
+                mode[mode_name[i]]=(NSGA2(model=models[i], NDIM=NDIM[i], GEN=20))
+            elif x == "spea2":
+                mode[mode_name[i]]=(SPEA2(model=models[i], NDIM=NDIM[i], GEN=20))
+        optimi[x] = mode
+
+    X = range(1,21)
+    for j, model in enumerate(mode_name):
+            for x in optimizers:
+                plt.figure(num=j, figsize=(25, 15))
+                plt.plot(X, optimi[x][model], label=x)
+                plt.xticks(X, range(1,21))
+                plt.ylabel("Energy")
+                plt.xlabel("Generations")
+                plt.legend(bbox_to_anchor=(1.05, 1.0), loc=2, borderaxespad=0.)
+                plt.savefig(model + ".png")

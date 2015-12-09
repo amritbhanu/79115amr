@@ -1,4 +1,4 @@
-Comparision of IPMDF model with 2 optimizers with varying number of generations
+Comparision of IPMDTF model with 2 optimizers with varying number of generations
 
 rank ,                 name ,     med   ,   iqr 
 ----------------------------------------------------
@@ -9,7 +9,7 @@ rank ,                 name ,     med   ,   iqr
    4 ,  errors_nsga2_gen_20 ,    36.89  ,  32.53 (      ----*    |              ), 27.02,  37.36,  59.55
    4 ,  errors_spea2_gen_20 ,    38.45  ,  13.48 (          -*   |              ), 37.76,  38.50,  51.23
 
-Comparision of IPMDF model with 2 optimizers with varying number of Crowding degree of mutations
+Comparision of IPMDTF model with 2 optimizers with varying number of Crowding degree of mutations
 
 rank ,                name ,     med   ,   iqr 
 ----------------------------------------------------
