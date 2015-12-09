@@ -1,0 +1,69 @@
+Comparision of IPMDF model with 2 optimizers with varying number of generations
+
+rank ,                 name ,     med   ,   iqr 
+----------------------------------------------------
+   1 , errors_spea2_gen_100 ,    12.51  ,   0.01 (*              |              ), 12.51,  12.51,  12.52
+   2 , errors_nsga2_gen_100 ,    14.89  ,   8.70 (-*             |              ), 13.04,  14.89,  21.75
+   2 ,  errors_spea2_gen_40 ,    17.85  ,   3.72 ( -*            |              ), 17.15,  18.16,  20.87
+   3 ,  errors_nsga2_gen_40 ,    23.30  ,  19.65 (   -*          |              ), 19.55,  23.88,  39.20
+   4 ,  errors_nsga2_gen_20 ,    36.89  ,  32.53 (      ----*    |              ), 27.02,  37.36,  59.55
+   4 ,  errors_spea2_gen_20 ,    38.45  ,  13.48 (          -*   |              ), 37.76,  38.50,  51.23
+
+Comparision of IPMDF model with 2 optimizers with varying number of Crowding degree of mutations
+
+rank ,                name ,     med   ,   iqr 
+----------------------------------------------------
+   1 ,  errors_spea2_eta_1 ,    13.95  ,   0.42 (*              |              ), 13.72,  13.95,  14.14
+   2 , errors_spea2_eta_20 ,    17.58  ,   0.05 (  *            |              ), 17.55,  17.58,  17.60
+   3 ,  errors_nsga2_eta_1 ,    18.33  ,  15.02 ( -*            |              ), 15.01,  18.47,  30.03
+   3 , errors_nsga2_eta_10 ,    18.34  ,  15.49 (---*           |              ), 14.03,  19.33,  29.52
+   3 , errors_spea2_eta_10 ,    21.18  ,   0.90 (   *           |              ), 20.47,  21.20,  21.37
+   3 , errors_nsga2_eta_20 ,    21.78  ,  18.18 ( ---*          |              ), 15.96,  22.23,  34.15
+
+Comparision of EVM model with 2 optimizers with varying number of generations
+
+rank ,              name ,    med   ,  iqr 
+----------------------------------------------------
+   1 , EVM_spea2_gen_100 ,    6.36  ,  0.00 (*              |              ), 6.36,  6.36,  6.36
+   1 , EVM_nsga2_gen_100 ,    6.36  ,  0.09 (*              |              ), 6.36,  6.36,  6.45
+   1 ,  EVM_spea2_gen_40 ,    6.41  ,  0.07 (*              |              ), 6.40,  6.42,  6.47
+   2 ,  EVM_nsga2_gen_40 ,    6.50  ,  0.69 (*              |              ), 6.38,  6.52,  7.07
+   2 ,  EVM_nsga2_gen_20 ,    7.07  ,  2.64 (-*             |              ), 6.58,  7.19,  9.22
+   2 ,  EVM_spea2_gen_20 ,    7.36  ,  0.30 ( *             |              ), 7.25,  7.36,  7.54
+
+Comparision of EVM model with 2 optimizers with varying number of Crowding degree of mutations
+
+rank ,             name ,    med   ,  iqr 
+----------------------------------------------------
+   1 , EVM_nsga2_eta_10 ,    6.36  ,  0.15 (*              |              ), 6.36,  6.36,  6.51
+   1 ,  EVM_nsga2_eta_1 ,    6.37  ,  0.24 (*              |              ), 6.36,  6.37,  6.60
+   1 ,  EVM_spea2_eta_1 ,    6.41  ,  0.02 (*              |              ), 6.40,  6.41,  6.42
+   1 , EVM_nsga2_eta_20 ,    6.43  ,  1.92 (*              |              ), 6.36,  6.44,  8.28
+   1 , EVM_spea2_eta_10 ,    6.55  ,  0.02 (*              |              ), 6.54,  6.55,  6.57
+   2 , EVM_spea2_eta_20 ,    9.39  ,  0.03 (     *         |              ), 9.38,  9.39,  9.40
+
+
+Name: SPEA2-errors-40-0.5.txt HyperVolume: 1.3746855
+Name: NSGA2-errors-20-0.5.txt HyperVolume: 1.2903361
+Name: NSGA2-errors-50-20.txt HyperVolume: 1.4158615
+Name: NSGA2-EVM-50-10.txt HyperVolume: 1.5325642
+Name: NSGA2-EVM-40-0.5.txt HyperVolume: 1.5323731
+Name: SPEA2-EVM-40-0.5.txt HyperVolume: 1.5312761
+Name: NSGA2-errors-40-0.5.txt HyperVolume: 1.3897125
+Name: SPEA2-errors-100-0.5.txt HyperVolume: 1.4314101
+Name: NSGA2-EVM-100-0.5.txt HyperVolume: 1.5325666
+Name: SPEA2-EVM-100-0.5.txt HyperVolume: 1.5325661
+Name: NSGA2-errors-50-1.txt HyperVolume: 1.4130152
+Name: NSGA2-EVM-50-1.txt HyperVolume: 1.5325572
+Name: SPEA2-errors-50-1.txt HyperVolume: 1.4167553
+Name: SPEA2-errors-20-0.5.txt HyperVolume: 0.9879533
+Name: SPEA2-errors-50-10.txt HyperVolume: 1.1380334
+Name: NSGA2-EVM-50-20.txt HyperVolume: 1.5325538
+Name: SPEA2-EVM-20-0.5.txt HyperVolume: 1.4802991
+Name: SPEA2-EVM-50-20.txt HyperVolume: 1.3593043
+Name: SPEA2-EVM-50-1.txt HyperVolume: 1.5305083
+Name: NSGA2-errors-100-0.5.txt HyperVolume: 1.4302727
+Name: SPEA2-errors-50-20.txt HyperVolume: 1.3213712
+Name: SPEA2-EVM-50-10.txt HyperVolume: 1.5226333
+Name: NSGA2-EVM-20-0.5.txt HyperVolume: 1.526796
+Name: NSGA2-errors-50-10.txt HyperVolume: 1.4275374
