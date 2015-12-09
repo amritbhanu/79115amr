@@ -163,10 +163,17 @@ Figure 4. Integrated Project Model Defect Testing Flow
 
 ## REFERENCES
 [1] Madachy R and Boehm B, “Software dependability modeling,” in Software Process Modeling, Acuña S T and Juristo N (Eds.), Springer Science+Business Media Inc., New York, 2005.
+
 [2] Boehm B, Brown A W, Madachy R, and Yang Y, “A software product line life cycle cost estimation model,” in ISESE ’04: The 2004 International Symposium on Empirical Software Engineering, pp. 156–164, IEEE Computer Society, 2004.
+
 [3] Deb, Kalyanmoy, Amrit Pratap, Sameer Agarwal, and T. A. M. T. Meyarivan. "A fast and elitist multiobjective genetic algorithm: NSGA-II." Evolutionary Computation, IEEE Transactions on 6, no. 2 (2002): 182-197.
+
 [4] Laumanns, Marco. "SPEA2: Improving the strength Pareto evolutionary algorithm." (2001).
+
 [5] T. Abdel-Hamid, and S. Madnick, "Software Project Dynamics: An Integrated Approach", Prentice Hall, NJ, USA, 1990
+
 [6] R. Madachy, "Software Process Dynamics", Wiley Interscience, Wiley & Sons, NJ, USA, 2008
+
 [7] http://csse.usc.edu/softwareprocessdynamics/models.html
+
 [8] http://deap.readthedocs.org/en/master/index.html
