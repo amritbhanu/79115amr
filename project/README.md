@@ -18,7 +18,7 @@ NSGA-II [3] multi-objective optimization method comprises the steps of: (1) rand
 
 SPEA [4] uses a regular population and an archive (external set). Starting with an initial population and an empty archive the following steps are performed per-iteration. First, all nondominated population members are copied to the archive; any dominated individuals or duplicates (regarding the objective values) are removed from the archive during this update operation. If the size of the updated archive exceeds a predefined limit, further archive members are deleted by a clustering technique which preserves the characteristics of the nondominated front. Afterwards, fitness values are assigned to both archive and population members.
 
-Abdel-Hamid and Madnick [5] proposed the integrated defect model that illustrates the interaction between different teams inside a software organization team namely the QA team, testing team, and the personnel allocation sector. Madachy in his book [6] proposed a simplified version of Abdel-Hamid and Madnick’s proposed model and termed it as the Integrated Project Model Defect Testing Flow (IPMDTF). Figure 1 shows IPMDFC. In contrast to the model proposed by Abdel-Hamid and Madnick, the flow chains are simplified. The model considers two types of errors namely active, and passive. According to Madachy, active errors can contribute to other errors, while passive errors do not. Madachy considers all design errors to be active errors, though coding errors may be either active or passive.
+Abdel-Hamid and Madnick [5] proposed the integrated defect model that illustrates the interaction between different teams inside a software organization team namely the QA team, testing team, and the personnel allocation sector. Madachy in his book [6] proposed a simplified version of Abdel-Hamid and Madnick’s proposed model and termed it as the Integrated Project Model Defect Testing Flow (IPMDTF). Figure 1 shows IPMDTF. In contrast to the model proposed by Abdel-Hamid and Madnick, the flow chains are simplified. The model considers two types of errors namely active, and passive. According to Madachy, active errors can contribute to other errors, while passive errors do not. Madachy considers all design errors to be active errors, though coding errors may be either active or passive.
 
 ![file](Figs/Integrated.png)
 Figure 1. Integrated Project Model Defect Testing Flow
@@ -35,7 +35,7 @@ To implement the model we use the concepts of stock, flow, and auxiliary that ar
 - A stock is the entity that aggregates flows over time. Stocks are made larger over time by inflows and decreased by outflows.
 - An auxiliary is an entity that is used to hold input values or intermediates. In our implementation, we use auxiliaries as input to flows.
 - The auxiliaries are considered from [7] which is only considered of Testing part. The model itself is part of a larger model that included models for different sectors, namely control, personnel allocation, and coding.
-- For IPMDF model, it has 14 Auxiliaries and 2 objective functions are considered which are:
+- For IPMDTF model, it has 14 Auxiliaries and 2 objective functions are considered which are:
  - Minimizing the cumulative error rate
  - Minimizing the cumulative tasks tested
 - For EVM model, it has 6 Auxiliaries and 2 objective functions are considered which are:
@@ -45,7 +45,7 @@ To implement the model we use the concepts of stock, flow, and auxiliary that ar
 ## IMPLEMENTATION
 
 ### IMPLEMENTING THE MODELS
-IPMDF is implemented using the concepts of domain specific language. The object-oriented features of Python was used. In the implementation auxiliaries are treated as inputs and contribute to the flows directly. Each stock is filled by inflows and depleted by outflows. Our implementation is provided in Errors.py. This file has one method "Errors", that returns the 2 objective function values. The method "Errors" takes a list with the size of Auxiliary of a model in which elements are random values between 1 and 20.
+IPMDTF is implemented using the concepts of domain specific language. The object-oriented features of Python was used. In the implementation auxiliaries are treated as inputs and contribute to the flows directly. Each stock is filled by inflows and depleted by outflows. Our implementation is provided in Errors.py. This file has one method "Errors", that returns the 2 objective function values. The method "Errors" takes a list with the size of Auxiliary of a model in which elements are random values between 1 and 20.
 
 EVM is implemented using the concepts of domain specific language. The object-oriented features of Python was used. In the implementation auxiliaries are treated as inputs and contribute to the flows directly. Each stock is filled by inflows and depleted by outflows. Our implementation is provided in Errors.py. This file has one method "EVM", that returns the 2 objective function values. The method "EVM" takes a list with the size of Auxiliary of a model in which elements are random values between 1 and 20.
 
@@ -55,7 +55,7 @@ To implement the NSGA-II, DEAP [8] library is used. The candidate is selected us
 ### IMPLEMENTING SPEA2
 To implement the SPEA2, DEAP [8] library is used. The candidate is selected using inbuilt "cxSimulatedBinaryBounded" operator which executes a simulated binary crossover that modify in-place the input individuals. The simulated binary crossover expects sequence individuals of floating point numbers. For mutation, inbuilt function "mutPolynomialBounded". These functions have a parameter 'eta' which is crowding degree of the mutation. A high eta will produce a mutant resembling its parent, while a small eta will produce a solution much more different. The selection operator used is "selSPEA2". Another selection operator used is "selectTournament". The number of mutations used are 100 and the number of generations are varied from 20 to 100.
 
-### INTEGRATING IPMDF and EVM with NSG-II and SPEA2
+### INTEGRATING IPMDTF and EVM with NSG-II and SPEA2
 Finally, "Main.py" is run with the models, and the optimizers with different parameters for number of generations and crowding degree of the mutation. The results are compared with Scott-knott. Hypervolume is also measured.
 
 ## RESULTS
